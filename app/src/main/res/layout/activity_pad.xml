@@ -1,0 +1,105 @@
+<LinearLayout android:id="@+id/rootLayout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:keepScreenOn="true"
+            android:background="@drawable/roundedborders_blue"
+            android:orientation="vertical"
+            tools:context="com.by2.control.companion.connect.app.PadActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.2"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="▲"
+                    android:textSize="20sp"
+                    android:id="@+id/ExtendButton"
+                    android:tag="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:id="@+id/WalkButton"
+                    android:tag="40"
+                    android:text="walk" />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="▼"
+                    android:textSize="20sp"
+                    android:id="@+id/RetractButton"
+                    android:tag="3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text=" Speak your command!"
+                android:layout_width="match_parent"
+                android:id="@+id/textView6"
+                android:layout_weight="1"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textAlignment="viewEnd"
+                android:layout_height="0dp"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="STOP"
+                    android:textSize="20sp"
+                    android:id="@+id/StopButton"
+                    android:tag="2" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/topSpacerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"/>
+
+    <View
+        android:id="@+id/bottomSpacerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:background="#000000"/>
+</LinearLayout>

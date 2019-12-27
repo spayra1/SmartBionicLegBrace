@@ -1,0 +1,171 @@
+<LinearLayout android:id="@+id/rootLayout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:keepScreenOn="true"
+            android:background="@drawable/default_background"
+            android:orientation="vertical"
+            tools:context="com.by2.control.companion.connect.app.PadActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:text="Stairs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="▲"
+                        android:textSize="20sp"
+                        android:id="@+id/upStairs"
+                        android:tag="12" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="X"
+                        android:textSize="20sp"
+                        android:id="@+id/stairsStop"
+                        android:tag="2" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="▼"
+                        android:textSize="20sp"
+                        android:id="@+id/downStairs"
+                        android:tag="11" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Ramp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="▲"
+                        android:textSize="20sp"
+                        android:id="@+id/upRamp"
+                        android:tag="14" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="X"
+                        android:textSize="20sp"
+                        android:id="@+id/rampStop"
+                        android:tag="2" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="▼"
+                        android:textSize="20sp"
+                        android:id="@+id/downRamp"
+                        android:tag="13" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Chair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="▲"
+                        android:textSize="20sp"
+                        android:id="@+id/standUp"
+                        android:tag="16" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="X"
+                        android:textSize="20sp"
+                        android:id="@+id/standStop"
+                        android:tag="2" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="▼"
+                        android:textSize="20sp"
+                        android:id="@+id/sitDown"
+                        android:tag="15" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/topSpacerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"/>
+    <View
+        android:id="@+id/bottomSpacerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:background="#000000"/>
+</LinearLayout>

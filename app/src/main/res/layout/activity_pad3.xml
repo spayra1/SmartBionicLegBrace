@@ -1,0 +1,129 @@
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/roundedborders_blue"
+              android:orientation="vertical"
+              tools:context="com.by2.control.companion.connect.app.PadActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="slower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/decreaseSpeed"
+                android:layout_weight="1"
+                android:tag="5" />
+
+            <Button
+                android:text="faster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/increaseSpeed"
+                android:layout_weight="1"
+                android:tag="4" />
+        </LinearLayout>
+
+        <TextView
+            android:text=" Choose walking mode:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/white" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioGroup1">
+
+                    <RadioButton
+                        android:text="Potentiometer (old)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton1"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@color/common_plus_signin_btn_text_light_focused"
+                        app:buttonTint="@android:color/background_light" />
+
+                    <RadioButton
+                        android:text="Timer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton2"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@color/common_plus_signin_btn_text_light_focused"
+                        app:buttonTint="@android:color/background_light" />
+
+                    <RadioButton
+                        android:text="Auto Speed Adjust"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton4"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@color/common_plus_signin_btn_text_light_focused"
+                        app:buttonTint="@android:color/background_light" />
+
+                    <RadioButton
+                        android:text="Shock Absorption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton5"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@color/common_plus_signin_btn_text_light_focused"
+                        app:buttonTint="@android:color/background_light" />
+
+                    <RadioButton
+                        android:text="Potentiometer (new)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton3"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@color/common_plus_signin_btn_text_light_focused"
+                        app:buttonTint="@android:color/background_light" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/topSpacerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"/>
+
+    <View
+        android:id="@+id/bottomSpacerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:background="#000000"/>
+
+</LinearLayout>
