@@ -4,7 +4,7 @@
 
 This Android application has been designed to work on both Android smartphones (Android 4.4 and up) and Android Wear smartwatches (square screen preferred, Android Wear 1.5 and up).
 
-Original iteration of the bluetooth module source code has been forked from the open-source Android port of Adafruit's Bluefruit LE Connect app for iOS, available at: (https://github.com/adafruit/Bluefruit_LE_Connect_Android/)
+Original iteration of the bluetooth module source code was forked from the open-source Android port of Adafruit's Bluefruit LE Connect app for iOS, available at: (https://github.com/adafruit/Bluefruit_LE_Connect_Android/)
 
 
 ## License
